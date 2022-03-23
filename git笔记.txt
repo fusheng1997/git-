@@ -32,6 +32,10 @@ git与github工作简介：
 
 跳转路径
 指令：cd [要跳转的目录]
+
+
+创建并写入内容
+指令：echo “写入的内容”>> 写入的文件名
 -------------------------------------------------------
 
 
@@ -44,7 +48,7 @@ git config --global user.email "575525805@qq.com"
 
 
 
-
+标签操作
 -------------------------------------------------------
 命令Git tag 查看标签；
 命令Git tag <tagname> 可以创建一个本地标签；
@@ -67,19 +71,16 @@ git config --global user.email "575525805@qq.com"
 指令：git init
 
 
-创建并写入内容
-指令：echo “写入的内容”>> 写入的文件名
-
 更新本地仓库至最新改动
-指令 git pull
+指令 git pull [仓库别名] [分支或者标签]
 
 
-添加远程仓库并与远程库建立链接(GitHub)
+添加远程仓库并与远程库建立链接(GitHub/gitee)
 指令：git remote add [给远程库名取得名字][ssh或者http]
 示例：git remote add github git@github.com:fusheng1997/user_code.git
 示例：git remote add gitee git@gitee.com:fusheng1997/user_code.git
 
-删除远程仓库
+删除远程仓库名称
 指令：git remote rm origin2
 ------------------------------------------------------
 
@@ -94,8 +95,8 @@ git config --global user.email "575525805@qq.com"
 指令：git remote -v
 
 提取远程仓库
-指令：git fetch [远程库名]
-指令：git merge [远程库名/分支]
+指令：git fetch [远程库名] [分支]
+指令：git merge 远程库名/分支
 
 提取远程指定标签
 指令：git clone --branch [标签] [远程仓库地址]
